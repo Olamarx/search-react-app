@@ -9,8 +9,7 @@ constructor(props) {
 
     onFormSubmit = (event) => {
         event.preventDefault()
-        console.log(this.state.term)
-
+        this.props.onSubmit(this.state.term)
     }
 
   render() {
@@ -18,7 +17,7 @@ constructor(props) {
       <div className="ui segment">
         <form onSubmit={this.onFormSubmit} className="ui field">
             <div className="field">
-                <label htmlFor="imput-text" > Image Search </label>
+                <label> Image Search </label>
             <input type="text" id="input-text"
             value={this.state.term}
             onChange={(e) =>this.setState({ term: e.target.value })} />
