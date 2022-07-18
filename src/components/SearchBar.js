@@ -10,6 +10,7 @@ constructor(props) {
     onFormSubmit = (event) => {
         event.preventDefault()
         this.props.onSubmit(this.state.term)
+        this.setState({term: ''})
     }
 
   render() {
