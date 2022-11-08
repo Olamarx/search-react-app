@@ -1,6 +1,6 @@
 ![Udemy](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
 
-#Search Image Project
+# Search Image Project
 
 In this project, I created an app with React framework. It fetches images from the API and renders on the UI in an ordered form. I used React.createRef() to get the clientHieght of each image and used it to give it a nice grid-row-end.
 
